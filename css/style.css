@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(10, 141, 82);
+}
+
+.container{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    height: 200px;
+    transition: 0.2s;
+}
+
+.container.active{
+    height: 400px;
+}
+
+h1{
+    font-size: 1.8rem;
+    color: rgb(48, 48, 48);
+}
+
+p{
+    font-size: 0.6rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#qr-form{
+    display: flex;
+    flex-direction: column;
+}
+
+#qr-form input,
+#qr-form button{
+    height: 40px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+#qr-form input{
+    border: 1px solid #ccc;
+    font-size: 0.7rem;
+    padding: 0.5rem;    
+}
+
+#qr-form button{
+    background-color: rgb(148, 232, 194);
+    color: #fff;
+    font-weight: bold;
+    transition: .2s;
+    cursor: pointer;
+}
+
+#qr-form button:hover{
+    background-color: rgb(10, 141, 82);
+}
+
+#qr-image{
+    border: 1px solid #ccc;
+    text-align: center;
+    transition: .5s;
+    padding: 1rem;
+    border-radius: 5px;
+    opacity: 0;
+}
+
+.container.active #qr-image{
+    opacity: 1;
+}
+
